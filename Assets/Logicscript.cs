@@ -7,7 +7,7 @@ public class LogicScript : MonoBehaviour
 {
     public int playerScore = 0;
     public Text scoreText;
-    public GameObject gameOverScreen;  // L'écran Game Over
+    public GameObject gameOverScreen;  // L'Ã©cran Game Over
 
     private void Start()
     {
@@ -25,16 +25,15 @@ public class LogicScript : MonoBehaviour
         scoreText.text = playerScore.ToString();
     }
 
-    // Fonction qui redémarre le jeu lorsque l'on clique sur "Rejouer"
+    // Fonction qui redÃ©marre le jeu lorsque l'on clique sur "Rejouer"
     public void RestartGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);  // Recharge la scène actuelle pour redémarrer
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);  // Recharge la scÃ¨ne actuelle pour redÃ©marrer
     }
 
-    // Fonction qui active l'écran Game Over
+    // Fonction qui active l'Ã©cran Game Over
     public void GameOver()
     {
-        gameOverScreen.SetActive(true);  // Affiche l'écran Game Over
+        gameOverScreen.SetActive(true);  // Affiche l'Ã©cran Game Over
     }
 }
-
